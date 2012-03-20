@@ -14,7 +14,7 @@ if (isset($_GET['queryTarget']))
 
 	if ($_GET['queryTarget'] == 'salaries')
 	{
-		$query = "select * from salaries2012 where position = '" . mysql_real_escape_string($_GET['position']) . "' and salary > " . mysql_real_escape_string($_GET['salary']) . "'";
+		$query = "select * from salaries2012 where position = '" . mysql_real_escape_string($_GET['position']) . "' and salary > " . mysql_real_escape_string($_GET['salary']);
 	}
 	
 	$result = mysql_query($query);
@@ -82,41 +82,41 @@ so you may need to use either on query or the other in order to return the data 
 <!--	<tr>
 		<td>get the usernamd + password for user bob and bob only</td>
 		<td><?php showResult(challenge1()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][1]);?> </td>
+		<td><?php showResult($_SESSION['level5'][1]);?> </td>
 	</tr>
 -->
 	<tr>
 		<td>Get 4 rows of data</td>
 		<td><?php showResult(challenge2()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][2]);?> </td>
+		<td><?php showResult($_SESSION['level5'][2]);?> </td>
 	</tr>
 
-
+<!--
 	<tr>
 		<td>Get all the movies but making all their ratings 500</td>
 		<td><?php showResult(challenge3()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][3]);?> </td>
+		<td><?php showResult($_SESSION['level5'][3]);?> </td>
 	</tr>
-
+-->
 
 
 	<tr>
 		<td>Get all the users except ianboyle</td>
 		<td><?php showResult(challenge4()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][4]);?> </td>
+		<td><?php showResult($_SESSION['level5'][4]);?> </td>
 	</tr>
 
 	<tr>
 		<td>Get all the users but make ianboyles password = "abc" <br /> (based off previous challenge)</td>
 		<td><?php showResult(challenge5()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][5]);?> </td>
+		<td><?php showResult($_SESSION['level5'][5]);?> </td>
 	</tr>
 
 	<tr>
 		<td>Get the 2 most interesting fields of all the data from the table you discovered in lesson 3 <br />
 HINT: This is a table we haven't disclosed in the list above (ie not users or movies)</td>
 		<td><?php showResult(challenge6()); ?> </td>
-		<td><?php showResult($_SESSION['level4'][6]);?> </td>
+		<td><?php showResult($_SESSION['level5'][6]);?> </td>
 	</tr>
 
 

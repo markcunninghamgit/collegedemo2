@@ -12,7 +12,7 @@ function challenge1()
 
 	if ($mysqlData[0]['username'] == "bob" and $mysqlData[0]['password'] == 'freddy123' and  $mysqlReturnRows == 1 )
 	{
-		$_SESSION['level4'][1] = true;
+		$_SESSION['level5'][1] = true;
 		return true;
 	}
 	
@@ -24,7 +24,7 @@ function challenge2()
 	global $mysqlReturnRows;
 	if ($mysqlReturnRows  == 4)
 	{
-		$_SESSION['level4'][2] = true;
+		$_SESSION['level5'][2] = true;
 		return true;
 	}
 
@@ -62,7 +62,7 @@ function challenge3()
 	
 	if ($perfectEncoded == $submittedEncoded)
 	{
-		$_SESSION['level4'][3] = true;
+		$_SESSION['level5'][3] = true;
 		return true;
 	}
 	
@@ -105,7 +105,7 @@ function challenge4()
 	
 	if ($perfectEncoded == $submittedEncoded)
 	{
-		$_SESSION['level4'][4] = true;
+		$_SESSION['level5'][4] = true;
 		return true;
 	}
 
@@ -155,7 +155,7 @@ function challenge5()
 
 
 	{
-		$_SESSION['level4'][5] = true;
+		$_SESSION['level5'][5] = true;
 		return true;
 	}
 
@@ -192,7 +192,7 @@ function challenge6()
 
 	if ($perfectEncoded === $userEncoded)
 	{
-		$_SESSION['level4'][6] = true;
+		$_SESSION['level5'][6] = true;
 		return true;
 	}
 
