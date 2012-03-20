@@ -1,7 +1,7 @@
 <?php
 
 require_once('connect.php');
-
+require_once('level3challenges.php');
 
 
 if (isset($_GET['query']))
@@ -57,18 +57,38 @@ if (isset($_GET['query']))
 <h2>Lesson objective</h2>
 <p>There's a special virtual table in mysql (not in other sql servers) that can show you all the information about the tables/columns/fields<br />
 In the previous example, I gave you 2 table names. Now i want you to retrieve the rest. First start executing the following statements<br />
-and having a glance through the result. See if you can find the tables and column names stated above? Are there any extra?</p>
+and having a glance through the result. See if you can find the tables and column names stated above? <br />
+<b>There is one we haven't mentioned so far, see if you can find this. You'll need this for level 4</b> </p>
 <p>You might be wondering, why do we need to do this? What about the "show tables" command? You might note, when you used this in the previous <br />
 example, that it only worked when it was the only query you used. If you tried to string it together with something else it fails, making it <br />
 unsuitable when we can only append to a query and not write the whole thing ourselves </p>
+<p>This is quite a lot of data. Can you see any difference between the rows that give out data we want and the others? Can you use that information < br />
+to pull out ONLY the ones we want? Save your query for later. Remember, we won't know what the database name is</p>
+
+<table border="1">
+	<tr>
+		<th>Challenge</th>
+		<th>Solved by current query</th>
+		<th>Previously solved</th>
+
+	</tr>
+
+	<tr>
+		<td>select only cells that have hostnames in them</td>
+		<td><?php showResult(challenge1()); ?> </td>
+		<td><?php showResult($_SESSION['level3'][1]);?> </td>
+	</tr>
+</tr>
+</table>
+
 <h2>Examples</h2>
 <ul>
 	<li>select * from information_schema.tables</li>
 	<li>select * from information_schema.columns</li>
-<ul>
+</ul>
 <p>This is a great link for more examples of sql queries<a href="http://www.w3schools.com/sql/sql_select.asp">http://www.w3schools.com/sql/sql_select.asp</a></p>
 <h1>Enter your sql query</h1>
-<form action="level1.php" method="GET" >
+<form action="" method="GET" >
 Query: <input type="text" name="query" size="100" /> <br />
 </form>
 

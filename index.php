@@ -33,23 +33,23 @@
 
 
 		<tr>
-			<td>Level 1</td>
+			<td>Level 3</td>
+			<td>Retrieving table/column names</td>
+			<td><a href="level3.php" >level3.php</a></td>
+		<tr>
+
+
+		<tr>
+			<td>Level 4</td>
+			<td>Altering prewritten queries</td>
+			<td><a href="level4.php" >level4.php</a></td>
+		<tr>
+
+
+		<tr>
+			<td>Level 5</td>
 			<td>Basic sql queries</td>
-			<td><a href="level1.php" >level1.php</a></td>
-		<tr>
-
-
-		<tr>
-			<td>Level 1</td>
-			<td>Basic sql queries</td>
-			<td><a href="level1.php" >level1.php</a></td>
-		<tr>
-
-
-		<tr>
-			<td>Level 1</td>
-			<td>Basic sql queries</td>
-			<td><a href="level1.php" >level1.php</a></td>
+			<td><a href="level5.php" >level5.php</a></td>
 		<tr>
 
 
