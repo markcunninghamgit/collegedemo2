@@ -1,0 +1,14 @@
+Collegedemo2 - for lack of a better term, it kind of stuck
+
+5 levels, each level has challenges you can complete such as selecting 5 rows or
+   changing the results to make the passwords come out different
+
+  Each level has a list of example queries on the page. Run them all. They won't all work (ON PURPOSE) and should demonstrate 
+ the workings of mysql while doing it.
+
+Warning: lot of copy paste for challenges
+	as a result, some of the levels are impossible given the column numbers you're able to work with
+
+
+Also,  this was a very rough overnight job. I have plans to fix it up and do it properly... some day
+
