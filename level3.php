@@ -74,7 +74,7 @@ to pull out ONLY the ones we want? Save your query for later. Remember, we won't
 	</tr>
 
 	<tr>
-		<td>select only cells that have hostnames in them</td>
+		<td>select only cells that have table names in them</td>
 		<td><?php showResult(challenge1()); ?> </td>
 		<td><?php showResult($_SESSION['level3'][1]);?> </td>
 	</tr>
